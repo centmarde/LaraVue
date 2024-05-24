@@ -1,3 +1,5 @@
 <template>
-    <h1>Home Page</h1>
+   <div class="container">
+    <h1>wasasda</h1>
+   </div>
 </template>

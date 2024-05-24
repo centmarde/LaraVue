@@ -6,3 +6,8 @@
     background-color: red;
     color: aliceblue;
 }
+#index_body{
+    background-color: black;
+    height: 100vh;
+    overflow-y: hidden;
+}

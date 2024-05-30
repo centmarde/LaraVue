@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div id="app"></div>
+    <div id="app">  <app-component /></app-component></div>
     @vite('resources/js/app.js')
 </body>
 

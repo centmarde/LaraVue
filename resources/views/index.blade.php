@@ -12,13 +12,15 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Styles -->
-    @vite('resources/css/app.css')
+    
+    <!-- Styles and Scripts -->
+    @vite(['resources/css/app.css', 'resources/js/app.js','public/assets/js/main.js'])
 </head>
 
 <body>
-    <div id="app">  <app-component /></app-component></div>
-    @vite('resources/js/app.js')
+    <div id="app">
+        <app-component></app-component>
+    </div>
 </body>
 
 </html>

@@ -79,7 +79,14 @@ export const useAuthStore = defineStore("auth", {
             }
         },
         async handleLogout() {
-            // When logging out, I want to be redirected to the login page.
+            // Confirm before logging out
+           
+            const confirmation = window.confirm("Are you sure you want to log out?");
+            if (!confirmation) {
+                return; // Exit the function if the user cancels
+            }
+        
+            // When logging out, redirect to the login page.
             await this.getToken();
             await axios.get("/api/logout", {
                 headers: {
@@ -89,6 +96,7 @@ export const useAuthStore = defineStore("auth", {
             sessionStorage.clear();
             this.authUser = null;
             this.router.push("/");
-        },
+        }
+        
     },
 });
